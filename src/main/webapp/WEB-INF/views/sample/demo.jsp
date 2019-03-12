@@ -6,23 +6,22 @@
 <head>
 <meta charset="UTF-8">
 <title>demo</title>
-<script src="http://code.jquery.com/jquery-latest.min.js"></script>
-<script src="/resources/test.js"></script>
+<%@include file="/resources/js/common.js"%>
 </head>
 <body>
 	<ul id="demo"></ul>
 <script>
 $(function() {
 	$.ajax({
-		url : '/ajax/demo',
+		url : '/api/demo',
 		type: "GET",
 		contentType: "application/json",
 		success: function (data) {
 			console.log("data: ", data);
-			
+			var res = data.response;
 			var str = "";
 			
-			$.each(data, function(idx, value) {
+			$.each(res, function(idx, value) {
 				console.log("idx: ", idx);
 				console.log("value.user_name: ", value.user_name);
 				

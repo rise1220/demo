@@ -1,15 +1,15 @@
-package com.example.demo.repository;
+package com.example.demo.repository.sample;
 
 import java.util.List;
 
 import org.apache.ibatis.annotations.Mapper;
 import org.springframework.stereotype.Repository;
 
-import com.example.demo.domain.DemoVo;
+import com.example.demo.domain.DemoVO;
 
 
 @Mapper
 @Repository
 public interface DemoRepository {
-	List<DemoVo> getUserList();
+	List<DemoVO> getUserList() throws Exception;
 }

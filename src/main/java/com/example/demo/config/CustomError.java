@@ -1,4 +1,4 @@
-package com.example.demo;
+package com.example.demo.config;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.http.HttpServletRequest;
@@ -9,7 +9,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
-public class CustomErrorController implements ErrorController {
+public class CustomError implements ErrorController {
 
 	private String PATH = "error";
     

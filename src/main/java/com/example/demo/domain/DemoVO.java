@@ -3,7 +3,7 @@ package com.example.demo.domain;
 import lombok.Data;
 
 @Data
-public class DemoVo {
+public class DemoVO {
 	private Long seq;
     private String user_name;
 }
